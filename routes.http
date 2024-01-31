@@ -1,0 +1,28 @@
+POST http://localhost:3333/videos
+Content-type: application/json
+
+//Body da minha requisição
+{
+    "title": "Video 01",
+    "description": "Esta é a descrição do video 01",
+    "duration": 180
+}
+
+###
+
+GET  http://localhost:3333/videos
+
+###
+
+PUT http://localhost:3333/videos/cb703aec-ef82-4eda-af18-002f165f7be3
+Content-type: application/json
+
+{
+    "title": "Atualizado",
+    "description": "Esta é a descrição foi atualizada",
+    "duration": 180
+}
+
+###
+
+DELETE http://localhost:3333/videos/cb703aec-ef82-4eda-af18-002f165f7be3
